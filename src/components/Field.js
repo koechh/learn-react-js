@@ -7,7 +7,7 @@ class Field extends Component {
       <div className="ui field">
         <label>
           <LanguageContext.Consumer>
-            {value => value === 'english' ? 'Name' : 'Naam'}
+            {({ language }) => language === 'english' ? 'Name' : 'Naam'}
           </LanguageContext.Consumer>
         </label>
         <input/>
